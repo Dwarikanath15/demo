@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Fibonacci</title>
+<script>
+	function fibonacci()
+	{
+		var a=0 ,b=1,i,temp,n;
+		n=Number(document.getElementById("Txtnum").value);
+		for(i=0;i<=n;i++)
+		{
+			temp=a+b;
+			a=b;
+			b=temp;
+			document.getElementById("Txtfibo").value = document.getElementById("Txtfibo").value + " " +temp;
+		}
+	}
+</script>
+
+
+<style>
+#Btnfibo{
+	border-radius:25px;
+  background-repeat:repeat;
+  color:red;
+  padding: 5px; 
+  width: 70px;
+  height: 30px;  
+}
+
+#BtnRst{
+  border-radius:25px;
+  background-position: left top;
+  background-repeat: repeat;
+  color:red;
+  padding: 5px; 
+  width: 50px;
+  height: 30px;  
+}
+</style>
+
+<body>
+<form>
+	<table>
+		<tr>
+			<td>Enter number for Fibonacci</td>
+			<td><input type="text" id="Txtnum" autocomplete="off" style="Background:cyan; color:red;"/></td>
+		</tr>
+		<tr>
+			<td>Fibonaccici</td>
+			<td><input type="text" id="Txtfibo" readonly="true" style="Background:cyan; color:red;" /></td>
+		</tr>
+		
+		<tr>
+			<td><input type="button" value="Fibonacci" onclick="fibonacci()" id="Btnfibo" /></td>
+			<td><input type="Reset" value="Reset" id="BtnRst"/></td>
+		</tr>
+	</table>
+</form>
+</body>
+</head>
+</html>

@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Product</title>
+<script>
+	function product()
+	{
+		var a, b, c;
+		a = Number(document.getElementById("Txtmultiplicant").value);
+		b = Number(document.getElementById("Txtmultiplier").value);
+		c = a * b;
+		document.getElementById("Txtproduct").value=c;
+	}
+</script>
+
+<style>
+#Btnproduct{
+	border-radius:25px;
+  background-repeat:repeat;
+  color:red;
+  padding: 5px; 
+  width: 55px;
+  height: 30px;  
+}
+
+#BtnRst{
+  border-radius:25px;
+  background-position: left top;
+  background-repeat: repeat;
+  color:red;
+  padding: 5px; 
+  width: 50px;
+  height: 30px;  
+}
+</style>
+
+<body>
+<form>
+		<table>
+			<tr>
+				<td>Enter Multiplicant</td>
+				<td><input type="Text" id="Txtmultiplicant" autocomplete="off" style="Background:cyan; color:red;"/></td>
+			</tr>
+			<tr>
+				<td>Enter Multiplier</td>
+				<td><input type="Text" id="Txtmultiplier" autocomplete="off" style="Background:cyan; color:red;"/></td>
+			</tr>
+			<tr>
+				<td>Product</td>
+				<td><input type="number" id="Txtproduct" readonly="true" style="Background:cyan; color:red;" /></td>
+			</tr>
+			<tr>
+				<td><input type="Button" value="Multiply" id="Btnproduct" onclick="product()" /></td>
+				<td><input type="Reset" value="Reset" id="BtnRst" /></td>
+			</tr>
+		</table>
+</form>
+</body>
+</head>
+</html>

@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Factorial</title>
+<script>
+	function factorial()
+	{
+		var a , b, i, fact=1;
+		a = Number(document.getelementById("Txtnumber").value);
+		for(i=1;i<=a;i++)
+		{
+			fact=fact*i;
+		}
+		document.getelementById("TxtFactorial").value=b;
+	}
+</script>
+
+<style>
+#Btnfact{
+	border-radius:25px;
+  background-repeat:repeat;
+  color:red;
+  padding: 5px; 
+  width: 62px;
+  height: 30px;  
+}
+
+#BtnRst{
+  border-radius:25px;
+  background-position: left top;
+  background-repeat: repeat;
+  color:red;
+  padding: 5px; 
+  width: 50px;
+  height: 30px;  
+}
+</style>
+
+<body>
+<form>
+	<table>
+		<tr>
+			<td>Enter number</td>
+			<td><input type="text" id="Txtnumber" autocomplete="off" style="Background:cyan; color:red;"/></td>
+		</tr>
+		<tr>
+			<td>Factorial</td>
+			<td><input type="text" id="TxtFactorial" readonly="true" style="Background:cyan; color:red;" /></td>
+		</tr>
+		
+		<tr>
+			<td><input type="Button" value="Factorial" id="Btnfact"onclick="factorial()" /></td>
+			<td><input type="Reset" value="Reset" id="BtnRst"/></td>
+		</tr>
+	</table>
+</form>
+</body>
+</head>
+</html>

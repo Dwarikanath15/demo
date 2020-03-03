@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>ContactUs</title>
+	<link rel="stylesheet" type="text/css" href="school.css" />
+	<style>
+		.Data{
+			font-weight:bold;
+			font-style:Normal;
+		}
+		#BtnSubmit , #BtnReset{
+			color:red;
+			font-weight:bold;
+			background-color:light-blue;
+			border-radius:25px;
+			padding:7px;
+			height:35px;
+			width:100px;
+		
+		}
+		#Address{
+			font-weight:Bold;
+			font-style:Italic;
+			text-color:cyan;
+			font-size:20px;
+		}
+		input[name='TxtEnquiryID']{
+			border-radius:15px;
+			padding:7px;
+			height:15px;
+			width:150px;
+		}
+		input[name='TxtName']{
+			border-radius:15px;
+			padding:7px;
+			height:15px;
+			width:150px;
+		}
+		input[name='TxtFathersName']{
+			border-radius:15px;
+			padding:7px;
+			height:15px;
+			width:150px;
+		}
+		input[name='TxtMOB']{
+			border-radius:15px;
+			padding:7px;
+			height:15px;
+			width:150px;
+		}
+		input[name='TxtDOB']{
+			border-radius:15px;
+			padding:7px;
+			height:15px;
+			width:150px;
+		}
+		input[name='TxtCity']{
+			border-radius:15px;
+			padding:7px;
+			height:15px;
+			width:150px;
+		}
+		input[name='TxtPS']{
+			border-radius:15px;
+			padding:7px;
+			height:15px;
+			width:150px;
+		}
+		input[name='TxtPinCode']{
+			border-radius:15px;
+			padding:7px;
+			height:15px;
+			width:150px;
+		}
+		input[name='TxtPostOffice']{
+			border-radius:15px;
+			padding:7px;
+			height:15px;
+			width:150px;
+		}
+		input[name='TxtDistrict']{
+			border-radius:15px;
+			padding:7px;
+			height:15px;
+			width:150px;
+		}
+			
+		
+	</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+	<body style='background-color:lightblue;'>
+		<table border="0" height="1500" width="96%"align="center" style='background-color:grey;'>
+			<tr Height="10%">
+			<!--banner-->
+				<td colspan="2" valign="top"><img src="Images\Logo.jpg" height="200" width="100%"></td>
+			</tr>
+			<!--Menu-->
+			<tr>
+			<td width="15%" height="3%"valign="Top">
+				<ul>
+				<li><a href="template.htm">Home</a></li>
+				<li><a href="aboutUS.htm">AboutUs</a></li>
+				<li><a href="streamacademics.htm">Academics</a></li>
+				<li><a href="gallery.htm" target="blank">Gallery</a></li>
+				<li><a herf='###'>More</a></li>
+				</ul>
+			</td>
+			
+			</tr>
+			<!--Contents-->
+			<tr>
+			<td valign="top">	
+			
+				<h1 align='center' style='color:darkblue; font-weight:bold;'>Admission Form</h1>
+				<form method="GET" action="FormSubmit.php">
+					<table border='0' align='center' id='Contents'>
+						<tr class='Data'>
+							<td>Enquiry Id</td>
+							<td><input type='Text' Name='TxtEnquiryID' /></td>
+						</tr>
+					
+						<tr class='Data'>
+							<td>Student's Name</td>
+							<td><input type="Text" Name='TxtName' /></td>
+						</tr>
+						<tr class='Data'>
+							<td>Father's Name</td>
+							<td><input type='Text' Name='TxtFathersName' /></td>
+						</tr>
+						<tr class='Data'>
+							<td>Date of Birth</td>
+							<td><input type="Text" Name='TxtDOB'/></td>
+						</tr>
+						<tr class='Data'>
+							<td>Gender</td>
+							<td><input type="radio"  />Male
+								<input type="radio"  />Female</td>
+						</tr>
+						<tr class='Data'>
+							<td>Mobile Number</td>
+							<td><input type='Text' Name='TxtMOB'/></td>
+						</tr>
+						<tr class='Data' style='font-size:35'>
+							<td id='Address'>Address</td>
+						</tr>
+						<tr class='Data'>
+							<td>Village/City</td>
+							<td><input type='Text' Name='TxtCity'/></td>
+						</tr>
+						<tr class='Data'>
+							<td>Post Office</td>
+							<td><input type='Text' Name='TxtPostOffice'/></td>
+						</tr>
+						<tr class='Data'>
+							<td>Postal Code</td>
+							<td><input type='Text' Name='TxtPinCode'/></td>
+						</tr>
+						<tr class='Data'>
+							<td>Police Station</td>
+							<td><input type='Text' Name='TxtPS'/></td>
+						</tr>
+						<tr class='Data'>
+							<td>District</td>
+							<td><input type='Text' Name='TxtDistrict'/></td>
+						</tr>
+						<tr class='Data' >
+							<td><input type="submit" value="Submit" id='BtnSubmit'/></td>
+							<td><input type="reset" value="Reset" id='BtnReset'/></td>
+						</tr>
+					</table>
+				</form>
+			</td>
+			
+			</tr>
+			<!--Footer Section-->
+			<tr>
+			<td valign="bottom">	
+				<table border='0'
+					   height='10%'
+					   width='100%'
+					   style='background-color:lightblue;' >
+				<tr>
+					<td width='3%'>Contact Us</td>
+					<td width='3%'>E-mail</td>
+					<td width='3%'>Facebook</td>
+					<td width='3%'>Instagram</td>
+				</tr>
+				<tr>	
+					<td width='3%'><a href='###'>xxxxxxxxxx</a></td>
+					<td width='3%'><a href='###'>abc@xyz.com</a></td>
+					<td width='3%'><a href='###'>KCISANRAULI</a></td>
+					<td width='3%'><a href='###'>KCISANRAULI</a></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+			<tr Height="7%" bgcolor="red">
+			<td colspan="2">
+				<Font Color="white"><center>Kids Camp Internationial School is managed by <b><u>VRAT Group of Institutes</u></center><b></font>
+			</td>
+			</tr>
+			
+		</table>
+	</body>
+
+</html>

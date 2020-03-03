@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>division</title>
+<script>
+	function division()
+	{
+	var a, b, c;
+			a = Number	'(document.getElementById("Txtdividend").value);
+			b = Number(document.getElementById("TxtDivisor").value);
+			c = a / b;
+			document.getElementById("TxtQuotient").value=c;
+		}	
+</script>
+
+
+<style>
+#BtnDivide{
+	border-radius:25px;
+  background-repeat:repeat;
+  color:red;
+  padding: 5px; 
+  width: 50px;
+  height: 30px;  
+}
+
+#BtnRst{
+  border-radius:25px;
+  background-position: left top;
+  background-repeat: repeat;
+  color:red;
+  padding: 5px; 
+  width: 50px;
+  height: 30px;  
+}
+</style>
+
+<body>
+<form>
+	<table>
+		<tr>
+			<td>Enter Dividend</td>
+			<td><input type="number" id="Txtdividend" autocomplete="off" style="Background:cyan; color:red;"/></td>
+		</tr>
+		
+		<tr>
+			<td>Enter Divisor</td>
+			<td><input type="number" id="Txtdivisor" autocomplete="off" style="Background:cyan; color:red;" /></td>
+			</tr>
+			<tr>
+				<td>Quotient</td>
+				<td><input type="number" id="TxtQuotient" readonly="true" style="Background:cyan; color:red;" /></td>
+			</tr>
+			
+		<tr>
+			<td><input type= "Button" value="Divide" id="BtnDivide" onclick="division()" /></td>
+			<td><input type="Reset" value="Reset" id="BtnRst"" /></td>
+		</tr>
+	</table>
+</form>
+</body>
+</head>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>getnext</title>
+<script>
+	function getnxt()
+	{
+		var a , b;
+		a = Number(document.getElementById("TxtNum").value);
+		b=a+1;
+		document.getElementById("TxtNxt").value=b;
+	}
+</script>
+
+<style>
+#BtnNxt{
+	border-radius:25px;
+  background-repeat:repeat;
+  color:red;
+  padding: 5px; 
+  width: 50px;
+  height: 30px;  
+}
+
+#BtnRst{
+  border-radius:25px;
+  background-position: left top;
+  background-repeat: repeat;
+  color:red;
+  padding: 5px; 
+  width: 50px;
+  height: 30px;  
+}
+</style>
+
+<body>
+<form>
+	<table>
+		<tr>
+			<td>Enter Number</td>
+			<td><input type="Text" id="TxtNum" autocomplete="off" style="Background:cyan; color:red;" /></td>
+		</tr>
+		<tr>
+			<td>Next number</td>
+			<td><input type="Text" id="TxtNxt" readonly="True" style="Background:cyan; color:red;"/></td>
+			</tr>
+		<tr>
+			<td><input type="Button" Value="Next" id="BtnNxt"  onclick="getnxt()" ></td>
+			<td><input type="Reset" value="Reset" id="BtnRst" /></td>
+		</tr>
+	</table>
+</form>
+</body>
+</head>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>temprature</title>
+<script>
+	function temp()
+	{
+		var a , b;
+		a = Number(document.getElementById("TxtCel").value);
+		b = a*9/5+32;
+		document.getElementById("TxtFar").value=b;
+	}
+</script>
+
+<style>
+		#BtnReset , #Btnfar{
+				border-radius:25px;	
+				background-repeat:repeat;
+				color:red;
+				padding: 5px; 
+				width: 80px;
+				height: 30px;  
+		}
+
+</style>
+
+<body>
+<form>
+		<table>
+			<tr>
+				<td>Celsius</td>
+				<td><input type="Text" id="TxtCel" autocomplete="off" style="Background:cyan; color:red;"/></td>
+			</tr>
+			<tr>
+				<td>Farenheit</td>
+				<td><input type="Text" id="TxtFar" readonly="true" style="Background:cyan; color:red;"/></td>
+			</tr>
+			<tr>
+				<td><input type="Button" value="Farenheit" id="Btnfar" onclick="temp()" /></td>
+				<td><input type="Reset" value="Reset" id='BtnReset' /></td>
+			</tr>
+		</table>
+</form>
+</body>
+</head>
+</html>
